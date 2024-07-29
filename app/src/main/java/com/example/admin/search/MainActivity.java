@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        
         searchEditText = findViewById(R.id.search_edittxt);
         listView = findViewById(R.id.list_view);
         arrayList = new ArrayList<>();
@@ -33,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
         arrayList.add("Her Poudel");
         arrayList.add("Pero Poudel");
         arrayList.add("Zero Poudel");
-
 
         final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1);
         arrayAdapter.addAll(arrayList);
